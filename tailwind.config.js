@@ -7,11 +7,12 @@ module.exports = {
       colors: {
         primary: "#eac51f",
         secondary: "#CDAF2B",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
+        backDark: "#948372",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
         josefin: ["Josefin Sans", "sans-serif"],
+        ebGaramond: ["EB Garamond", "serif"],
       },
     },
     screens: {
