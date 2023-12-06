@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="overflow-hidden font-josefin ">
       {/* Barra de anuncios Superior */}
-      <div className="flex justify-between bg-backDark px-24 py-2 text-white">
+      <div className="hidden justify-between bg-backDark px-24 py-2 text-white lg:flex">
         <ul className="ul hover:[&>li]:duration-400 flex flex-1 flex-row gap-3 text-sm [&>li>a]:font-normal [&>li]:transition-colors [&>li]:duration-700 hover:[&>li]:text-black hover:[&>li]:transition-colors">
           <li>
             <a href="#">Tw</a>
@@ -59,9 +59,9 @@ function App() {
       </div>
 
       {/* Navegación Principañ */}
-      <nav className="mt-4 flex items-center justify-between  px-20 font-josefin">
+      <nav className="mt-4 flex items-center justify-between px-8 font-josefin md:px-20">
         <img src={logotipo} alt="Joyas Brillas" className="w-[180px]" />
-        <div className="ms-20 flex flex-grow md:flex-row">
+        <div className="ms-20 hidden flex-grow md:flex md:flex-row">
           <a
             href="#"
             className="underline-hover duration-400 relative inline px-5 text-sm font-normal uppercase text-black transition-all ease-in-out hover:text-secondary"
@@ -87,7 +87,7 @@ function App() {
             Contáctanos
           </a>
         </div>
-        <div className="flex">
+        <div className="hidden md:flex">
           <a href="#" className="p-4">
             <FaHeart className="duration-400 text-black transition-all ease-in-out hover:text-secondary" />
           </a>
@@ -98,6 +98,7 @@ function App() {
             <CiSearch className="duration-400 text-black transition-all ease-in-out hover:text-secondary" />
           </a>
         </div>
+        <button className="flex md:hidden">menu</button>
       </nav>
 
       {/* Banner Principal */}
