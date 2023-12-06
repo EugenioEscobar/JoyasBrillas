@@ -2,6 +2,8 @@ import { FaHeart } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import { FaCartPlus } from "react-icons/fa";
 import { HiPhone, HiMail } from "react-icons/hi";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./style";
 
@@ -17,7 +19,7 @@ import {
 
 function App() {
   return (
-    <div className="overflow-hidden font-josefin ">
+    <div className="overflow-hidden scroll-smooth font-josefin">
       {/* Barra de anuncios Superior */}
       <div className="hidden justify-between bg-backDark px-24 py-2 text-white lg:flex">
         <ul className="ul hover:[&>li]:duration-400 flex flex-1 flex-row gap-3 text-sm [&>li>a]:font-normal [&>li]:transition-colors [&>li]:duration-700 hover:[&>li]:text-black hover:[&>li]:transition-colors">
@@ -136,44 +138,263 @@ function App() {
         </div>
       </div>
 
-      <div className="flex justify-evenly gap-8 px-32 py-8">
-        <a href="#" className="group relative flex items-center justify-center">
-          <img src={neckless} alt="" srcset="" className="relative z-10" />
-          <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
-            Cadenas
+      {/* Listado de productos */}
+      <div id="content" className="flex flex-col items-center">
+        <div className="container flex justify-evenly gap-8 px-16 pt-8">
+          <a
+            href="#"
+            className="group relative flex items-center justify-center"
+          >
+            <img src={neckless} alt="" className="relative z-10" />
+            <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
+              Cadenas
+            </span>
+            <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+          </a>
+          <a
+            href="#"
+            className="group relative flex items-center justify-center"
+          >
+            <img src={earrings} alt="" className="relative z-10" />
+            <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
+              Colgantes
+            </span>
+            <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+          </a>
+          <a
+            href="#"
+            className="group relative flex items-center justify-center"
+          >
+            <img src={bracelet} alt="" className="relative z-10" />
+            <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
+              Brazaletes
+            </span>
+            <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+          </a>
+          <a
+            href="#"
+            className="group relative flex items-center justify-center"
+          >
+            <img src={ring} alt="" className="relative z-10" />
+            <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
+              Anillos
+            </span>
+            <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+          </a>
+          <a
+            href="#"
+            className="group relative flex items-center justify-center"
+          >
+            <img src={anklet} alt="" className="relative z-10" />
+            <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
+              Tobilleras
+            </span>
+            <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
+          </a>
+        </div>
+
+        {/* Ver todos los productos */}
+        <div className="container mt-5 flex justify-end px-16">
+          <a
+            href="#"
+            className="group relative flex items-center gap-1 text-xl italic text-secondary underline underline-offset-4 hover:opacity-80"
+          >
+            <span className="relative transition-all duration-300 group-hover:-translate-x-4 ">
+              Ver Productos
+            </span>
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              beatFade={true}
+              className="fa-md absolute -right-[200%] opacity-0 transition-all duration-200 ease-in-out group-hover:right-0 group-hover:opacity-100 group-hover:duration-500"
+            />
+          </a>
+        </div>
+
+        {/* Productos Desctacados */}
+        <div className="mt-14 flex flex-col gap-3 text-center font-ebGaramond">
+          <h3 className="text-7xl italic ">Nuestra colección destacada</h3>
+          <hr className="w-full border" />
+          <span className="font-josefin text-xl uppercase tracking-widest text-secondary ">
+            las Mas vendidas
           </span>
-          <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
-        </a>
-        <a href="#" className="group relative flex items-center justify-center">
-          <img src={earrings} alt="" srcset="" className="relative z-10" />
-          <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
-            Colgantes
-          </span>
-          <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
-        </a>
-        <a href="#" className="group relative flex items-center justify-center">
-          <img src={bracelet} alt="" srcset="" className="relative z-10" />
-          <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
-            Brazaletes
-          </span>
-          <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
-        </a>
-        <a href="#" className="group relative flex items-center justify-center">
-          <img src={ring} alt="" srcset="" className="relative z-10" />
-          <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
-            Anillos
-          </span>
-          <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
-        </a>
-        <a href="#" className="group relative flex items-center justify-center">
-          <img src={anklet} alt="" srcset="" className="relative z-10" />
-          <span className="absolute font-ebGaramond text-3xl font-bold italic text-white transition duration-300 group-hover:z-20 ">
-            Tobilleras
-          </span>
-          <div className="absolute inset-0 z-10 bg-black bg-opacity-0 transition duration-300 ease-in-out group-hover:bg-opacity-50"></div>
-        </a>
+        </div>
+
+        {/* Grilla de Productos */}
+        <div className="container mt-14 flex flex-wrap px-16 text-center">
+          <div className="group relative w-1/4 p-6">
+            <a href="#product">
+              <div className="flex justify-center">
+                <img
+                  src={neckless}
+                  alt=""
+                  className="h-80 object-cover group-hover:opacity-60 "
+                />
+              </div>
+              <div className="flex justify-between">
+                <div className="flex flex-col p-1 text-start text-sm">
+                  <span className="">Collar</span>
+                  <span className="text-gray-700">Collar negro</span>
+                </div>
+                <div className="font-medium">$15.000</div>
+              </div>
+            </a>
+          </div>
+          <div className="group relative w-1/4 p-6">
+            <a href="#product">
+              <div className="flex justify-center">
+                <img
+                  src={neckless}
+                  alt=""
+                  className="h-80 object-cover group-hover:opacity-60 "
+                />
+              </div>
+              <div className="flex justify-between">
+                <div className="flex flex-col p-1 text-start text-sm">
+                  <span className="">Collar</span>
+                  <span className="text-gray-700">Collar negro</span>
+                </div>
+                <div className="font-medium">$15.000</div>
+              </div>
+            </a>
+          </div>
+          <div className="group relative w-1/4 p-6">
+            <a href="#product">
+              <div className="flex justify-center">
+                <img
+                  src={neckless}
+                  alt=""
+                  className="h-80 object-cover group-hover:opacity-60 "
+                />
+              </div>
+              <div className="flex justify-between">
+                <div className="flex flex-col p-1 text-start text-sm">
+                  <span className="">Collar</span>
+                  <span className="text-gray-700">Collar negro</span>
+                </div>
+                <div className="font-medium">$15.000</div>
+              </div>
+            </a>
+          </div>
+          <div className="group relative w-1/4 p-6">
+            <a href="#product">
+              <div className="flex justify-center">
+                <img
+                  src={neckless}
+                  alt=""
+                  className="h-80 object-cover group-hover:opacity-60 "
+                />
+              </div>
+              <div className="flex justify-between">
+                <div className="flex flex-col p-1 text-start text-sm">
+                  <span className="">Collar</span>
+                  <span className="text-gray-700">Collar negro</span>
+                </div>
+                <div className="font-medium">$15.000</div>
+              </div>
+            </a>
+          </div>
+          <div className="group relative w-1/4 p-6">
+            <a href="#product">
+              <div className="flex justify-center">
+                <img
+                  src={neckless}
+                  alt=""
+                  className="h-80 object-cover group-hover:opacity-60 "
+                />
+              </div>
+              <div className="flex justify-between">
+                <div className="flex flex-col p-1 text-start text-sm">
+                  <span className="">Collar</span>
+                  <span className="text-gray-700">Collar negro</span>
+                </div>
+                <div className="font-medium">$15.000</div>
+              </div>
+            </a>
+          </div>
+          <div className="group relative w-1/4 p-6">
+            <a href="#product">
+              <div className="flex justify-center">
+                <img
+                  src={neckless}
+                  alt=""
+                  className="h-80 object-cover group-hover:opacity-60 "
+                />
+              </div>
+              <div className="flex justify-between">
+                <div className="flex flex-col p-1 text-start text-sm">
+                  <span className="">Collar</span>
+                  <span className="text-gray-700">Collar negro</span>
+                </div>
+                <div className="font-medium">$15.000</div>
+              </div>
+            </a>
+          </div>
+          <div className="group relative w-1/4 p-6">
+            <a href="#product">
+              <div className="flex justify-center">
+                <img
+                  src={neckless}
+                  alt=""
+                  className="h-80 object-cover group-hover:opacity-60 "
+                />
+              </div>
+              <div className="flex justify-between">
+                <div className="flex flex-col p-1 text-start text-sm">
+                  <span className="">Collar</span>
+                  <span className="text-gray-700">Collar negro</span>
+                </div>
+                <div className="font-medium">$15.000</div>
+              </div>
+            </a>
+          </div>
+          <div className="group relative w-1/4 p-6">
+            <a href="#product">
+              <div className="flex justify-center">
+                <img
+                  src={neckless}
+                  alt=""
+                  className="h-80 object-cover group-hover:opacity-60 "
+                />
+              </div>
+              <div className="flex justify-between">
+                <div className="flex flex-col p-1 text-start text-sm">
+                  <span className="">Collar</span>
+                  <span className="text-gray-700">Collar negro</span>
+                </div>
+                <div className="font-medium">$15.000</div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
+
+      <div className="py-32 text-center uppercase">
+        Sección de Ofertas o Promociones:
+      </div>
+      <div className="py-32 text-center uppercase">
+        Sobre Nosotros (opcional):
+      </div>
+      <div className="py-32 text-center uppercase">
+        Testimonios o Reseñas de Clientes:
+      </div>
+      <div className="py-32 text-center uppercase">
+        Blog o Consejos de Joyería (opcional):
+      </div>
+      <div className="py-32 text-center uppercase">
+        Suscripción al Boletín Informativo:
+      </div>
+      <div className="py-32 text-center uppercase">FOOTER</div>
     </div>
+
+    // Sección de Ofertas o Promociones:
+
+    // Sobre Nosotros (opcional):
+
+    // Testimonios o Reseñas de Clientes:
+
+    // Blog o Consejos de Joyería (opcional):
+
+    // Suscripción al Boletín Informativo:
   );
 }
 
