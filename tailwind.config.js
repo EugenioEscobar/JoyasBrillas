@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#eac51f",
+        primary: "#ffea8a33",
         secondary: "#CDAF2B",
         backDark: "#948372",
         dimBlue: "rgba(9, 151, 124, 0.1)",
@@ -24,5 +24,5 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],  
+  plugins: [],
 };
