@@ -212,10 +212,7 @@ function App() {
         </div>
       </div>
 
-      <div
-        className="bg-clip-padding"
-        style={{ backgroundImage: `url(${BannerPrincipal})` }}
-      >
+      <div style={{ backgroundImage: `url(${BannerPrincipal})` }}>
         {/* Separador superior */}
         <svg
           width="100%"
