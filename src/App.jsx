@@ -15,7 +15,7 @@ import {
   bracelet,
   earrings,
   ring,
-  Separator,
+  BannerPreordena,
 } from "./assets";
 
 function App() {
@@ -140,7 +140,7 @@ function App() {
       </div>
 
       {/* Listado de productos */}
-      <div id="content" className="flex flex-col items-center">
+      <div id="content" className="mt-4 flex flex-col items-center md:mt-8">
         <div className="container flex justify-evenly gap-8 px-16 pt-8">
           <a
             href="#"
@@ -212,7 +212,10 @@ function App() {
         </div>
       </div>
 
-      <div style={{ backgroundImage: `url(${BannerPrincipal})` }}>
+      <div
+        className="mt-4 text-white md:mt-12"
+        // style={{ backgroundImage: `url(${BannerPrincipal})` }}
+      >
         {/* Separador superior */}
         <svg
           width="100%"
@@ -220,7 +223,7 @@ function App() {
           viewBox="0 0 1280 140"
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="scale-[-1] fill-primary"
+          className="scale-[-1] fill-backDark"
         >
           <g>
             <path d="M1280 0l-131.81 111.68c-16.47 14-35.47 21-54.71 20.17L173 94a76.85 76.85 0 0 1-36.79-11.46L0 0z" />
@@ -228,92 +231,104 @@ function App() {
         </svg>
 
         {/* Productos Desctacados */}
-        <div className="flex w-full justify-center bg-primary ">
-          <div className="mt-14 block text-center font-ebGaramond">
-            <h3 className="text-7xl italic ">Nuestra colección destacada</h3>
-            <hr className="border" />
-            <span className="font-josefin text-xl uppercase tracking-widest text-secondary ">
-              las Mas vendidas
-            </span>
+        <div className="bg-backDark py-16">
+          <div className="flex w-full justify-center ">
+            <div className="mt-14 block text-center font-ebGaramond">
+              <h3 className="px-8 text-7xl italic">
+                Nuestra colección destacada
+              </h3>
+              <hr className="my-2 border border-secondary" />
+              <span className="font-josefin text-xl uppercase tracking-widest text-secondary ">
+                las Mas vendidas
+              </span>
+            </div>
+          </div>
+
+          {/* Grilla de Productos */}
+          <div className="flex w-full flex-wrap px-16 pt-14 text-center md:px-64">
+            <div className="group relative w-1/4 p-6">
+              {/* Enlace a Producto */}
+              <a href="#product">
+                <div className="flex justify-center">
+                  <img
+                    src={neckless}
+                    alt=""
+                    className="h-80 object-cover group-hover:opacity-60 "
+                  />
+                </div>
+                <div className="flex justify-between">
+                  <div className="flex flex-col p-1 text-start text-sm">
+                    <span className="">Collar</span>
+                    <span className="text-gray-200">Collar negro</span>
+                  </div>
+                  <div className="font-medium">$15.000</div>
+                </div>
+              </a>
+            </div>
+            <div className="group relative w-1/4 p-6">
+              {/* Enlace a Producto */}
+              <a href="#product">
+                <div className="flex justify-center">
+                  <img
+                    src={neckless}
+                    alt=""
+                    className="h-80 object-cover group-hover:opacity-60 "
+                  />
+                </div>
+                <div className="flex justify-between">
+                  <div className="flex flex-col p-1 text-start text-sm">
+                    <span className="">Collar</span>
+                    <span className="text-gray-200">Collar negro</span>
+                  </div>
+                  <div className="font-medium">$15.000</div>
+                </div>
+              </a>
+            </div>
+            <div className="group relative w-1/4 p-6">
+              {/* Enlace a Producto */}
+              <a href="#product">
+                <div className="flex justify-center">
+                  <img
+                    src={neckless}
+                    alt=""
+                    className="h-80 object-cover group-hover:opacity-60 "
+                  />
+                </div>
+                <div className="flex justify-between">
+                  <div className="flex flex-col p-1 text-start text-sm">
+                    <span className="">Collar</span>
+                    <span className="text-gray-200">Collar negro</span>
+                  </div>
+                  <div className="font-medium">$15.000</div>
+                </div>
+              </a>
+            </div>
+            <div className="group relative w-1/4 p-6">
+              {/* Enlace a Producto */}
+              <a href="#product">
+                <div className="flex justify-center">
+                  <img
+                    src={neckless}
+                    alt=""
+                    className="h-80 object-cover group-hover:opacity-60 "
+                  />
+                </div>
+                <div className="flex justify-between">
+                  <div className="flex flex-col p-1 text-start text-sm">
+                    <span className="">Collar</span>
+                    <span className="text-gray-200">Collar negro</span>
+                  </div>
+                  <div className="font-medium">$15.000</div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-
-        {/* Grilla de Productos */}
-        <div className="flex w-full flex-wrap bg-primary px-16 pt-14 text-center md:px-64">
-          <div className="group relative w-1/4 p-6">
-            <a href="#product">
-              <div className="flex justify-center">
-                <img
-                  src={neckless}
-                  alt=""
-                  className="h-80 object-cover group-hover:opacity-60 "
-                />
-              </div>
-              <div className="flex justify-between">
-                <div className="flex flex-col p-1 text-start text-sm">
-                  <span className="">Collar</span>
-                  <span className="text-gray-700">Collar negro</span>
-                </div>
-                <div className="font-medium">$15.000</div>
-              </div>
-            </a>
-          </div>
-          <div className="group relative w-1/4 p-6">
-            <a href="#product">
-              <div className="flex justify-center">
-                <img
-                  src={neckless}
-                  alt=""
-                  className="h-80 object-cover group-hover:opacity-60 "
-                />
-              </div>
-              <div className="flex justify-between">
-                <div className="flex flex-col p-1 text-start text-sm">
-                  <span className="">Collar</span>
-                  <span className="text-gray-700">Collar negro</span>
-                </div>
-                <div className="font-medium">$15.000</div>
-              </div>
-            </a>
-          </div>
-          <div className="group relative w-1/4 p-6">
-            <a href="#product">
-              <div className="flex justify-center">
-                <img
-                  src={neckless}
-                  alt=""
-                  className="h-80 object-cover group-hover:opacity-60 "
-                />
-              </div>
-              <div className="flex justify-between">
-                <div className="flex flex-col p-1 text-start text-sm">
-                  <span className="">Collar</span>
-                  <span className="text-gray-700">Collar negro</span>
-                </div>
-                <div className="font-medium">$15.000</div>
-              </div>
-            </a>
-          </div>
-          <div className="group relative w-1/4 p-6">
-            <a href="#product">
-              <div className="flex justify-center">
-                <img
-                  src={neckless}
-                  alt=""
-                  className="h-80 object-cover group-hover:opacity-60 "
-                />
-              </div>
-              <div className="flex justify-between">
-                <div className="flex flex-col p-1 text-start text-sm">
-                  <span className="">Collar</span>
-                  <span className="text-gray-700">Collar negro</span>
-                </div>
-                <div className="font-medium">$15.000</div>
-              </div>
-            </a>
-          </div>
-        </div>
-
+      </div>
+      <div
+        className="h-[80vh] bg-cover"
+        style={{ backgroundImage: `url(${BannerPreordena})` }}
+      >
         {/* Separador Inferior */}
         <svg
           width="100%"
@@ -321,18 +336,14 @@ function App() {
           viewBox="0 0 1280 140"
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="fill-primary"
+          className="fill-backDark"
         >
           <g>
             <path d="M1280 0l-131.81 111.68c-16.47 14-35.47 21-54.71 20.17L173 94a76.85 76.85 0 0 1-36.79-11.46L0 0z" />
           </g>
         </svg>
       </div>
-
-      <div className="py-32 text-center uppercase">
-        Sección de Ofertas o Promociones:
-      </div>
-      <div className="py-32 text-center uppercase">
+      {/* <div className="py-32 text-center uppercase">
         Sobre Nosotros (opcional):
       </div>
       <div className="py-32 text-center uppercase">
@@ -343,8 +354,24 @@ function App() {
       </div>
       <div className="py-32 text-center uppercase">
         Suscripción al Boletín Informativo:
+      </div> */}
+      <div className="flex justify-center">
+        <div className="container  border-t-2 border-t-secondary">
+          <div className="flex items-center justify-between p-12">
+            <a href="#" className="flex flex-1 justify-start">
+              <img src={logotipo} alt="Joyas Brillas" className="w-[30%]" />
+            </a>
+            <span className="flex-1 text-center">
+              ©2023 Joyas Brillas, Todos lo derechos reservados
+            </span>
+            <ul className="flex flex-1 justify-end gap-6">
+              <li>In</li>
+              <li>What</li>
+              <li>Teléfono</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div className="py-32 text-center uppercase">FOOTER</div>
     </div>
 
     // Sección de Ofertas o Promociones:
