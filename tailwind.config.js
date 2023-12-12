@@ -5,9 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#ffea8a33",
+        primary: "#5d5954",
         secondary: "#CDAF2B",
         backDark: "#948372",
+        backImage: "#948372",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {

@@ -1,6 +1,7 @@
 import isotipo from "./isotipo.svg";
 import logotipo from "./logo.png";
 import BannerPrincipal from "./BannerPrincipal.webp";
+import BannerPromo from "./BannerPromo.png";
 import neckless from "./Neckless.webp";
 import anklet from "./Anklet.png";
 import bracelet from "./Bracelet.png";
@@ -12,6 +13,7 @@ export {
   isotipo,
   logotipo,
   BannerPrincipal,
+  BannerPromo,
   neckless,
   anklet,
   bracelet,
