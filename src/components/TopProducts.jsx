@@ -11,7 +11,7 @@ export function TopProducts() {
           viewBox="0 0 1280 140"
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="scale-[-1] fill-backDark"
+          className="scale-[-1] fill-primary"
         >
           <g>
             <path d="M1280 0l-131.81 111.68c-16.47 14-35.47 21-54.71 20.17L173 94a76.85 76.85 0 0 1-36.79-11.46L0 0z" />
@@ -19,7 +19,7 @@ export function TopProducts() {
         </svg>
 
         {/* Productos Desctacados */}
-        <div className="bg-backDark py-16">
+        <div className="bg-primary py-16">
           <div className="flex w-full justify-center ">
             <div className="mt-14 block text-center font-ebGaramond">
               <h3 className="px-8 text-7xl italic">
@@ -124,7 +124,7 @@ export function TopProducts() {
           viewBox="0 0 1280 140"
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="fill-backDark"
+          className="fill-primary"
         >
           <g>
             <path d="M1280 0l-131.81 111.68c-16.47 14-35.47 21-54.71 20.17L173 94a76.85 76.85 0 0 1-36.79-11.46L0 0z" />
