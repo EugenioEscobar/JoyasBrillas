@@ -4,5 +4,14 @@ import { Banner } from "./Banner";
 import { Categories } from "./Categories";
 import { TopProducts } from "./TopProducts";
 import { Footer } from "./Footer";
+import { ProductList } from "./ProductList";
 
-export { Advertisement, Navbar, Banner, Categories, TopProducts, Footer };
+export {
+  Advertisement,
+  Navbar,
+  Banner,
+  Categories,
+  TopProducts,
+  ProductList,
+  Footer,
+};

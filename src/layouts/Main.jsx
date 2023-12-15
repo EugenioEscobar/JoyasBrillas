@@ -9,7 +9,7 @@ import {
 
 export function Main() {
   return (
-    <>
+    <div className="overflow-hidden scroll-smooth font-josefin">
       <Advertisement span="Envianos tu reserva y obtén un 10% de descuento"></Advertisement>
 
       <Navbar></Navbar>
@@ -31,6 +31,6 @@ export function Main() {
       - Suscripción al Boletín Informativo 
       
       */}
-    </>
+    </div>
   );
 }

@@ -7,7 +7,7 @@ import anklet from "./Anklet.png";
 import bracelet from "./Bracelet.png";
 import earrings from "./Earrings.png";
 import ring from "./Ring.png";
-import BannerPreordena from "./BannerPreordena.jpg";
+import BannerPreordena from "./BannerPreordena.png";
 
 export {
   isotipo,

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -46,8 +47,8 @@ export function Categories() {
 
       {/* Ver todos los productos */}
       <div className="container mt-5 flex justify-end px-16">
-        <a
-          href="#"
+        <Link
+          to="/joyas"
           className="group relative flex items-center gap-1 text-xl italic text-secondary underline underline-offset-4 hover:opacity-80"
         >
           <span className="relative transition-all duration-300 group-hover:-translate-x-4 ">
@@ -58,7 +59,7 @@ export function Categories() {
             beatFade={true}
             className="fa-md absolute -right-[200%] opacity-0 transition-all duration-200 ease-in-out group-hover:right-0 group-hover:opacity-100 group-hover:duration-500"
           />
-        </a>
+        </Link>
       </div>
     </div>
   );

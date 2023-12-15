@@ -114,25 +114,19 @@ export function TopProducts() {
         </div>
       </div>
       <div
-        className="relative h-[80vh] bg-cover bg-fixed bg-center"
+        className="relative flex h-[50vh] flex-col items-end bg-cover bg-fixed bg-center"
         style={{ backgroundImage: `url(${BannerPreordena})` }}
       >
-        {/* Separador Inferior */}
-        <svg
-          width="100%"
-          height="100px"
-          viewBox="0 0 1280 140"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="relative z-20 fill-primary "
+        <div className="absolute left-[60%] top-0 z-10 h-[100%] w-full justify-center bg-black opacity-20 blur-md"></div>
+        <span className="z-20 text-left font-ebGaramond text-7xl tracking-wider text-white md:w-[700px] md:pt-40">
+          Tus joyas preferidas
+        </span>
+        <a
+          className="relative bg-secondary text-secondary  md:w-[700px]"
+          href="#"
         >
-          {" "}
-          <g>
-            {" "}
-            <path d="M1280 0l-131.81 111.68c-16.47 14-35.47 21-54.71 20.17L173 94a76.85 76.85 0 0 1-36.79-11.46L0 0z" />{" "}
-          </g>{" "}
-        </svg>
-        <div className="absolute right-0 top-0 z-10 h-[100%] w-full bg-black opacity-50 "></div>
+          as
+        </a>
       </div>
     </>
   );
