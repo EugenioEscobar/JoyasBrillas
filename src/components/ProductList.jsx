@@ -1,35 +1,42 @@
-const getProducts = () => {
-  const products = [
-    { Id: 1, Nombre: "Item 1", Desc: "Descripción 1", Valor: 1000 },
-    { Id: 2, Nombre: "Item 2", Desc: "Descripción 2", Valor: 2000 },
-    { Id: 3, Nombre: "Item 3", Desc: "Descripción 3", Valor: 3000 },
-    { Id: 4, Nombre: "Item 4", Desc: "Descripción 4", Valor: 4000 },
-    { Id: 5, Nombre: "Item 5", Desc: "Descripción 5", Valor: 5000 },
-    { Id: 6, Nombre: "Item 6", Desc: "Descripción 6", Valor: 6000 },
-    { Id: 7, Nombre: "Item 7", Desc: "Descripción 7", Valor: 7000 },
-    { Id: 8, Nombre: "Item 8", Desc: "Descripción 8", Valor: 8000 },
-  ];
-  console.log(products);
-  return products;
-};
+import { neckless } from "../assets";
+import { Link } from "react-router-dom";
+import { productos } from "../constants/products";
 
 export function ProductList() {
   return (
-    <>
+    <div className="flex flex-col items-center gap-8">
       <header className="flex justify-center">
-        <span className="mt-12 font-ebGaramond text-7xl font-medium italic text-secondary ">
+        <span className="text-corn-500 mt-12 font-ebGaramond text-7xl font-medium italic ">
           Productos
         </span>
       </header>
-      <section className="flex">
-        {/* <ul>
-          <li>asdS</li>
-          {getProducts().forEach((item) => {
-            console.log(item);
-            return <li>{item}</li>;
-          })}
-        </ul> */}
+      <hr className="w-[90%] max-w-[1500px] border border-t-secondary" />
+      <section className="flex max-w-[1500px] flex-wrap justify-center gap-3">
+        {productos.map((item) => {
+          console.log(item);
+          return (
+            <Link
+              to="/joya"
+              key={item.Id}
+              className="group relative w-full flex-grow rounded-sm pb-16 hover:bg-slate-100 md:w-[46%] lg:w-[30%] xl:w-[22%]"
+            >
+              <img
+                src={neckless}
+                alt={item.Nombre}
+                className="aspect-square w-full object-center"
+              />
+              <div className="absolute top-0 -z-10 aspect-square w-full bg-white opacity-30 group-hover:z-10"></div>
+              <div className="flex flex-col gap-4 text-center">
+                <p className="font-normal opacity-75">{item.nombre}</p>
+                <span className=" font-medium opacity-80">
+                  {item.descripcion}
+                </span>
+                <p className="text-xl font-bold italic">{`$${item.total}`}</p>
+              </div>
+            </Link>
+          );
+        })}
       </section>
-    </>
+    </div>
   );
 }
