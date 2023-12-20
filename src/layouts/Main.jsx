@@ -9,7 +9,7 @@ import {
 
 export function Main() {
   return (
-    <div className="overflow-hidden scroll-smooth font-josefin">
+    <div className="scroll-smooth font-josefin">
       <Advertisement span="Envianos tu reserva y obtén un 10% de descuento"></Advertisement>
 
       <Navbar></Navbar>

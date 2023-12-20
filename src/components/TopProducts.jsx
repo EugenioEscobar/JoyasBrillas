@@ -117,7 +117,7 @@ export function TopProducts() {
         className="relative flex h-[50vh] flex-col items-end bg-cover bg-fixed bg-center"
         style={{ backgroundImage: `url(${BannerPreordena})` }}
       >
-        <div className="absolute left-[60%] top-0 z-10 h-[100%] w-full justify-center bg-black opacity-20 blur-md"></div>
+        <div className="absolute left-[60%] top-0 z-10 h-[100%] w-[40%] justify-center bg-black opacity-20 blur-md"></div>
         <span className="z-20 text-left font-ebGaramond text-7xl tracking-wider text-white md:w-[700px] md:pt-40">
           Tus joyas preferidas
         </span>

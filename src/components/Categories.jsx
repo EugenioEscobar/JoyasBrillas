@@ -57,7 +57,7 @@ export function Categories() {
           <FontAwesomeIcon
             icon={faChevronRight}
             beatFade={true}
-            className="fa-md absolute -right-[200%] opacity-0 transition-all duration-200 ease-in-out group-hover:right-0 group-hover:opacity-100 group-hover:duration-500"
+            className="fa-md absolute -right-[200%] hidden opacity-0 transition-all duration-200 ease-in-out group-hover:right-0 group-hover:flex group-hover:opacity-100 group-hover:duration-500"
           />
         </Link>
       </div>
