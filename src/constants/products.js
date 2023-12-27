@@ -1,7 +1,7 @@
 export const productos = [
   {
     id: 1,
-    tipo: "Anillo",
+    tipo: "Anillos",
     nombre: "Ajustable Antiestres",
     descripcion: "Ajustable Antiestres",
     costo: 3690,
@@ -12,7 +12,7 @@ export const productos = [
   },
   {
     id: 2,
-    tipo: "Anillo",
+    tipo: "Anillos",
     nombre: "Ajustable Patita",
     descripcion: "Ajustable Patita",
     costo: 4590,
@@ -23,7 +23,7 @@ export const productos = [
   },
   {
     id: 3,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Trepador Mariposa",
     descripcion: "Trepador Mariposa",
     costo: 3590,
@@ -34,7 +34,7 @@ export const productos = [
   },
   {
     id: 4,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Trepador Hojas Brillo",
     descripcion: "Trepador Hojas Brillo",
     costo: 4290,
@@ -45,7 +45,7 @@ export const productos = [
   },
   {
     id: 5,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Trepador Brillo",
     descripcion: "Trepador Brillo",
     costo: 3490,
@@ -56,7 +56,7 @@ export const productos = [
   },
   {
     id: 6,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Sol & Luna",
     descripcion: "Sol & Luna",
     costo: 3590,
@@ -67,7 +67,7 @@ export const productos = [
   },
   {
     id: 7,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Cuadrado Nudo",
     descripcion: "Cuadrado Nudo",
     costo: 2590,
@@ -78,7 +78,7 @@ export const productos = [
   },
   {
     id: 8,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Circon Ovalados Brillantes",
     descripcion: "Circon Ovalados Brillantes",
     costo: 5590,
@@ -89,7 +89,7 @@ export const productos = [
   },
   {
     id: 9,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Circon Redondo",
     descripcion: "Circon Redondo",
     costo: 1990,
@@ -100,7 +100,7 @@ export const productos = [
   },
   {
     id: 10,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Corazon Te Quiero",
     descripcion: "Corazon Te Quiero",
     costo: 3590,
@@ -111,7 +111,7 @@ export const productos = [
   },
   {
     id: 11,
-    tipo: "Aros ",
+    tipo: "Aritos",
     nombre: "Cuadrado Brillante",
     descripcion: "Cuadrado Brillante",
     costo: 2490,
@@ -122,7 +122,7 @@ export const productos = [
   },
   {
     id: 12,
-    tipo: "Brasalete",
+    tipo: "Brasaletes",
     nombre: "Pandora Mickey",
     descripcion: "Pandora Mickey",
     costo: 15990,
@@ -133,7 +133,7 @@ export const productos = [
   },
   {
     id: 13,
-    tipo: "Brasalete",
+    tipo: "Brasaletes",
     nombre: "Pandora Princesa",
     descripcion: "Pandora Princesa",
     costo: 15990,
@@ -144,7 +144,7 @@ export const productos = [
   },
   {
     id: 14,
-    tipo: "Cadena",
+    tipo: "Cadenas",
     nombre: "Pelotas 45cm",
     descripcion: "Pelotas 45cm",
     costo: 4590,
@@ -155,7 +155,7 @@ export const productos = [
   },
   {
     id: 15,
-    tipo: "Cadena",
+    tipo: "Cadenas",
     nombre: "Turbillon 40cm",
     descripcion: "Turbillon 40cm",
     costo: 6590,
@@ -166,7 +166,7 @@ export const productos = [
   },
   {
     id: 16,
-    tipo: "Cadena",
+    tipo: "Cadenas",
     nombre: "Corazones 50cm",
     descripcion: "Corazones 50cm",
     costo: 5990,
@@ -177,7 +177,7 @@ export const productos = [
   },
   {
     id: 17,
-    tipo: "Cadena",
+    tipo: "Cadenas",
     nombre: "Caracol 45cm",
     descripcion: "Caracol 45cm",
     costo: 6590,
@@ -188,7 +188,7 @@ export const productos = [
   },
   {
     id: 18,
-    tipo: "Cadena",
+    tipo: "Cadenas",
     nombre: "Argolla 40cm",
     descripcion: "Argolla 40cm",
     costo: 6590,
@@ -199,7 +199,7 @@ export const productos = [
   },
   {
     id: 19,
-    tipo: "Cadena",
+    tipo: "Cadenas",
     nombre: "Cadena Turbillon 50cm(MIO)",
     descripcion: "Cadena Turbillon 50cm(MIO)",
     costo: 16990,
@@ -210,7 +210,7 @@ export const productos = [
   },
   {
     id: 20,
-    tipo: "Charm",
+    tipo: "Charms",
     nombre: "Corazon Love",
     descripcion: "Corazon Love",
     costo: 4990,
@@ -221,7 +221,7 @@ export const productos = [
   },
   {
     id: 21,
-    tipo: "Charm",
+    tipo: "Charms",
     nombre: "Corazon Medieval",
     descripcion: "Corazon Medieval",
     costo: 5990,
@@ -232,7 +232,7 @@ export const productos = [
   },
   {
     id: 22,
-    tipo: "Charm",
+    tipo: "Charms",
     nombre: "Harry Potter",
     descripcion: "Harry Potter",
     costo: 6590,
@@ -243,7 +243,7 @@ export const productos = [
   },
   {
     id: 23,
-    tipo: "colgante ",
+    tipo: "colgantes",
     nombre: "Nudo",
     descripcion: "Nudo",
     costo: 1990,
@@ -254,7 +254,7 @@ export const productos = [
   },
   {
     id: 24,
-    tipo: "colgante ",
+    tipo: "colgantes",
     nombre: "Esfera Strass",
     descripcion: "Esfera Strass",
     costo: 1990,
@@ -264,30 +264,8 @@ export const productos = [
     "precio net": 6400,
   },
   {
-    id: 25,
-    tipo: "Insumo",
-    nombre: "Bolsas",
-    descripcion: "Bolsas",
-    costo: 1190,
-    cantidad: 2,
-    total: 2380,
-    precio: 0,
-    "precio net": 0,
-  },
-  {
-    id: 26,
-    tipo: "Insumo",
-    nombre: "Argolla Broche",
-    descripcion: "Argolla Broche",
-    costo: 590,
-    cantidad: 2,
-    total: 1180,
-    precio: 0,
-    "precio net": 0,
-  },
-  {
     id: 27,
-    tipo: "Pulsera",
+    tipo: "Pulseras",
     nombre: "Pelotas",
     descripcion: "Pelotas",
     costo: 3290,
@@ -298,7 +276,7 @@ export const productos = [
   },
   {
     id: 28,
-    tipo: "Pulsera",
+    tipo: "Pulseras",
     nombre: "Corazones",
     descripcion: "Corazones",
     costo: 2990,
@@ -309,7 +287,7 @@ export const productos = [
   },
   {
     id: 29,
-    tipo: "Pulsera",
+    tipo: "Pulseras",
     nombre: "Infantil Rombo (MIO)",
     descripcion: "Infantil Rombo (MIO)",
     costo: 2590,
@@ -320,7 +298,7 @@ export const productos = [
   },
   {
     id: 30,
-    tipo: "Anillo",
+    tipo: "Anillos",
     nombre: "Conchas Esferas",
     descripcion: "Conchas Esferas",
     costo: 3990,
@@ -331,7 +309,7 @@ export const productos = [
   },
   {
     id: 31,
-    tipo: "Anillo",
+    tipo: "Anillos",
     nombre: "Cintillo Circones Granate Negro ",
     descripcion: "Cintillo Circones Granate Negro ",
     costo: 4590,
@@ -342,7 +320,7 @@ export const productos = [
   },
   {
     id: 32,
-    tipo: "Anillo",
+    tipo: "Anillos",
     nombre: "Circones morado blanco",
     descripcion: "Circones morado blanco",
     costo: 3690,
@@ -353,7 +331,7 @@ export const productos = [
   },
   {
     id: 33,
-    tipo: "Anillo",
+    tipo: "Anillos",
     nombre: "Cintillo Circones Cuadrados",
     descripcion: "Cintillo Circones Cuadrados",
     costo: 4990,
@@ -364,7 +342,7 @@ export const productos = [
   },
   {
     id: 34,
-    tipo: "Pulsera",
+    tipo: "Pulseras",
     nombre: "Corazones Entrelazados",
     descripcion: "Corazones Entrelazados",
     costo: 1990,
@@ -375,7 +353,7 @@ export const productos = [
   },
   {
     id: 35,
-    tipo: "Pulsera",
+    tipo: "Pulseras",
     nombre: "Tradicional con Ovalos",
     descripcion: "Tradicional con Ovalos",
     costo: 2990,
@@ -386,7 +364,7 @@ export const productos = [
   },
   {
     id: 36,
-    tipo: "Pulsera",
+    tipo: "Pulseras",
     nombre: "Rombo Flor",
     descripcion: "Rombo Flor",
     costo: 2590,
@@ -397,7 +375,7 @@ export const productos = [
   },
   {
     id: 37,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Trepador Patitas",
     descripcion: "Trepador Patitas",
     costo: 4590,
@@ -408,7 +386,7 @@ export const productos = [
   },
   {
     id: 38,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Trepador Circones",
     descripcion: "Trepador Circones",
     costo: 4590,
@@ -419,7 +397,7 @@ export const productos = [
   },
   {
     id: 39,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Trepador Seis Estrellas",
     descripcion: "Trepador Seis Estrellas",
     costo: 2990,
@@ -430,7 +408,7 @@ export const productos = [
   },
   {
     id: 40,
-    tipo: "Aros ",
+    tipo: "Aritos",
     nombre: "Trepador Tres Estrellas Circon",
     descripcion: "Trepador Tres Estrellas Circon",
     costo: 4590,
@@ -441,9 +419,9 @@ export const productos = [
   },
   {
     id: 41,
-    tipo: "Aros",
-    nombre: "Aros Bidu con Cadena ",
-    descripcion: "Aros Bidu con Cadena ",
+    tipo: "Aritos",
+    nombre: "AritosBidu con Cadena ",
+    descripcion: "AritosBidu con Cadena ",
     costo: 3990,
     cantidad: 1,
     total: 3990,
@@ -452,7 +430,7 @@ export const productos = [
   },
   {
     id: 42,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Pasador Nudo de Bruja",
     descripcion: "Pasador Nudo de Bruja",
     costo: 3990,
@@ -463,7 +441,7 @@ export const productos = [
   },
   {
     id: 43,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Circon Tornasol Cuadrado 4x4",
     descripcion: "Circon Tornasol Cuadrado 4x4",
     costo: 1690,
@@ -474,7 +452,7 @@ export const productos = [
   },
   {
     id: 44,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Estrella Circon Blanca 4mm",
     descripcion: "Estrella Circon Blanca 4mm",
     costo: 1690,
@@ -485,7 +463,7 @@ export const productos = [
   },
   {
     id: 45,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Estrella Circon Rosa 6mm",
     descripcion: "Estrella Circon Rosa 6mm",
     costo: 1890,
@@ -496,7 +474,7 @@ export const productos = [
   },
   {
     id: 46,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Circon 8mm",
     descripcion: "Circon 8mm",
     costo: 2290,
@@ -507,7 +485,7 @@ export const productos = [
   },
   {
     id: 47,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Estrella",
     descripcion: "Estrella",
     costo: 2990,
@@ -518,7 +496,7 @@ export const productos = [
   },
   {
     id: 48,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Patita Negra",
     descripcion: "Patita Negra",
     costo: 3690,
@@ -529,7 +507,7 @@ export const productos = [
   },
   {
     id: 49,
-    tipo: "Aros",
+    tipo: "Aritos",
     nombre: "Cuadrado Micro Circon",
     descripcion: "Cuadrado Micro Circon",
     costo: 3890,
@@ -540,9 +518,9 @@ export const productos = [
   },
   {
     id: 50,
-    tipo: "Aros",
-    nombre: "Aros corazon (del Tripack)",
-    descripcion: "Aros corazon (del Tripack)",
+    tipo: "Aritos",
+    nombre: "Aritoscorazon (del Tripack)",
+    descripcion: "Aritoscorazon (del Tripack)",
     costo: 5590,
     cantidad: 1,
     total: 5590,
@@ -551,7 +529,7 @@ export const productos = [
   },
   {
     id: 51,
-    tipo: "",
+    tipo: "Tripack",
     nombre: "flores (tripack)",
     descripcion: "flores (tripack)",
     costo: 5590,
@@ -562,7 +540,7 @@ export const productos = [
   },
   {
     id: 52,
-    tipo: "",
+    tipo: "Anillos",
     nombre: "Anillo  cintillo circon ",
     descripcion: 6990,
     costo: "$6.990",

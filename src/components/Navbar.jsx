@@ -48,7 +48,7 @@ export function Navbar() {
       </div>
       <ul
         className="flex flex-1 list-none 
-            items-center justify-end sm:hidden"
+            items-center justify-end md:hidden"
       >
         {/* Iconos responsive del Sidebar */}
         <FiAlignJustify

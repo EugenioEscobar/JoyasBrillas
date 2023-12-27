@@ -3,21 +3,21 @@ import { BannerPrincipal } from "../assets";
 export function Banner() {
   return (
     <div
-      className="flex h-[65vh] w-full bg-cover bg-center "
+      className="relative flex h-[40vh] w-full bg-cover bg-right md:h-[65vh]"
       style={{ backgroundImage: `url(${BannerPrincipal})` }}
     >
-      <div className="ml-[6rem] flex max-w-[700px] flex-col gap-y-4 pt-44">
+      <div className="absolute z-10 h-full w-full bg-black opacity-50 md:hidden"></div>
+      <div className="relative z-20 ml-[4rem] flex max-w-[700px] flex-col gap-y-4 pt-20 md:ml-[4rem] md:pt-44">
         <div className="inline-block">
-          <span className="inline-block bg-gradient-to-r from-yellow-200 to-yellow-500 bg-clip-text font-ebGaramond text-xl font-bold capitalize italic text-transparent">
+          <span className="hidden bg-gradient-to-r  from-yellow-200 to-yellow-500 bg-clip-text font-ebGaramond text-xl font-bold capitalize italic text-transparent md:inline-block">
             Diseños Exclusivos
           </span>
         </div>
-        <h1 className="text-5xl font-semibold uppercase leading-snug tracking-widest text-white">
-          Joyas de plata
+        <h1 className="text-xl font-semibold uppercase leading-snug tracking-widest text-white md:text-5xl">
+          joyas de plata exclusivas
         </h1>
-        <p className="balanc text-lg text-white">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
-          repudiandae nobis quibusdam error eius minima iste facilis adipisci.
+        <p className="text-lg text-white">
+          Envío gratis dentro de la Región Metropolitana.
         </p>
         <div className="mt-4 flex gap-5 font-ebGaramond">
           <button

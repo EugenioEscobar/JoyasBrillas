@@ -1,3 +1,4 @@
+import { getTiposProducto } from "../constants/tipoProducto";
 import {
   Advertisement,
   Navbar,
@@ -5,9 +6,13 @@ import {
   Categories,
   TopProducts,
   Footer,
+  ProductList,
 } from "../components";
 
 export function Main() {
+  const categorias = getTiposProducto();
+  console.log(categorias);
+
   return (
     <div className="scroll-smooth font-josefin">
       <Advertisement span="Envianos tu reserva y obtén un 10% de descuento"></Advertisement>
@@ -16,9 +21,22 @@ export function Main() {
 
       <Banner></Banner>
 
-      <Categories></Categories>
+      <header className="flex justify-center">
+        <h2 className="mb-6 mt-12 font-ebGaramond text-7xl font-medium italic text-corn-600 ">
+          Descuentos de Apertura
+        </h2>
+      </header>
+      {categorias.map((categoria) => {
+        return (
+          <ProductList
+            counter={4}
+            key={categoria}
+            categoria={categoria}
+          ></ProductList>
+        );
+      })}
 
-      <TopProducts></TopProducts>
+      {/* Ventajas competitivas */}
 
       <Footer></Footer>
 
