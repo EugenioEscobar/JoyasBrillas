@@ -7,7 +7,7 @@ export function LinkToProductos(categoria) {
     ? `Más ${categoria.categoria}`
     : "Productos";
   return (
-    <div className="mt-5 flex justify-end px-44">
+    <div className="mt-5 flex justify-end px-32">
       <Link
         to="/joyas"
         className="group relative flex items-center gap-1 text-xl italic text-corn-500 underline underline-offset-4 hover:opacity-80"

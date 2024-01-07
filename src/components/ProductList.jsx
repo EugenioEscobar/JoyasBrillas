@@ -17,13 +17,11 @@ export function ProductList({ counter = 16, categoria }) {
       ) : null}
 
       <main className="flex justify-center px-16  pt-4 md:px-32">
-        <div className="flex flex-1 flex-wrap justify-between px-12">
+        {/* <div className="flex flex-1 flex-wrap justify-between px-12"> */}
+        <div className="grid grid-cols-6 gap-4">
           {productListed.map((item) => {
             return (
-              <article
-                key={item.id}
-                className="sm:w-[46%] md:w-[30%] lg:w-[22%]"
-              >
+              <article key={item.id}>
                 <Link
                   to="/joya"
                   className="group relative w-full flex-grow rounded-sm pb-16 hover:bg-slate-100"
@@ -34,12 +32,15 @@ export function ProductList({ counter = 16, categoria }) {
                     className="aspect-square w-full object-center"
                   />
                   <div className="absolute top-0 -z-10 aspect-square w-full bg-white opacity-30 group-hover:z-10"></div>
-                  <div className="flex flex-col gap-4 text-center">
-                    <p className="font-normal opacity-75">{item.nombre}</p>
-                    <span className=" font-medium opacity-80">
-                      {item.descripcion}
+                  <div className="flex flex-col text-left">
+                    <span className="font-medium ">{item.nombre}</span>
+                    <span className="font-light">{item.descripcion}</span>
+                    <span className="mt-4 flex justify-start gap-5">
+                      <p className="text-xl font-bold italic">{`$${item.total}`}</p>
+                      <p className="text-xl italic text-primary line-through">{`$${
+                        item.total * 2
+                      }`}</p>
                     </span>
-                    <p className="text-xl font-bold italic">{`$${item.total}`}</p>
                   </div>
                 </Link>
               </article>

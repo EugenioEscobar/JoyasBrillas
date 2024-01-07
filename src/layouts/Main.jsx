@@ -29,7 +29,7 @@ export function Main() {
       {categorias.map((categoria) => {
         return (
           <ProductList
-            counter={4}
+            counter={6}
             key={categoria}
             categoria={categoria}
           ></ProductList>
