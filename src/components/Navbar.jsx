@@ -16,7 +16,7 @@ export function Navbar() {
 
   return (
     // <nav className="sticky left-0 top-0 z-50 mt-4 flex h-20 w-full items-center justify-between bg-white px-8 font-josefin md:px-20">
-    <nav className="sticky top-0 z-50 mt-4 flex items-center justify-between bg-white px-8 pt-2 font-josefin md:px-20">
+    <nav className="bg-cararra-50 sticky top-0 z-50 flex items-center justify-between bg-opacity-40 px-8 pt-4 font-josefin backdrop-blur-lg md:px-20">
       <Link to="/">
         <img
           src={logotipo}
@@ -66,7 +66,7 @@ export function Navbar() {
           className={`${
             !hideMenu ? "flex" : "hidden"
           } absolute right-0 top-20 mx-4
-              my-2 min-w-[250px] flex-col gap-y-4 rounded-md bg-dimBlue py-3 text-white backdrop-blur-2xl`}
+              my-2 min-w-[250px] flex-col gap-y-4 rounded-md bg-black bg-opacity-70 py-3 text-white backdrop-blur-2xl`}
         >
           {navLinks.map((link) => (
             <Link

@@ -14,28 +14,33 @@ export function Main() {
   console.log(categorias);
 
   return (
-    <div className="scroll-smooth font-josefin">
+    <div className="bg-cararra-100 scroll-smooth font-josefin">
       <Advertisement span="Envianos tu reserva y obtén un 10% de descuento"></Advertisement>
 
       <Navbar></Navbar>
 
-      <Banner></Banner>
+      <Banner linkCatalogo="#productos"></Banner>
 
-      <header className="flex justify-center">
-        <h2 className="mb-6 mt-12 font-ebGaramond text-7xl font-medium italic text-corn-600 ">
-          Descuentos de Apertura
-        </h2>
-      </header>
-      {categorias.map((categoria) => {
-        return (
-          <ProductList
-            counter={6}
-            key={categoria}
-            categoria={categoria}
-          ></ProductList>
-        );
-      })}
-
+      <section id="productos">
+        <header className="flex justify-center">
+          <h2 className="relative mb-6 mt-12 font-ebGaramond text-4xl font-medium italic sm:text-5xl md:text-7xl">
+            Productos Destacados
+            <span className="absolute -right-28 -top-4 rotate-6 rounded-2xl bg-gradient-to-r from-corn-500 to-corn-400 p-1 px-3 text-base text-black md:text-xl">
+              Descuentos de Apertura
+            </span>
+          </h2>
+        </header>
+        <ProductList counter={4}></ProductList>
+        {categorias.map((categoria) => {
+          return (
+            <ProductList
+              counter={4}
+              key={categoria}
+              categoria={categoria}
+            ></ProductList>
+          );
+        })}
+      </section>
       {/* Ventajas competitivas */}
 
       <Footer></Footer>

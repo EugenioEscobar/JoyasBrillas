@@ -1,6 +1,6 @@
 import { BannerPrincipal } from "../assets";
 
-export function Banner() {
+export function Banner({ linkCatalogo = "" }) {
   return (
     <div
       className="relative flex h-[40vh] w-full bg-cover bg-right md:h-[65vh]"
@@ -20,12 +20,13 @@ export function Banner() {
           Envío gratis dentro de la Región Metropolitana.
         </p>
         <div className="mt-4 flex gap-5 font-ebGaramond">
-          <button
+          <a
+            href={linkCatalogo}
             type="button"
             className="border bg-white px-10 py-2 font-ebGaramond text-xl italic tracking-wide text-black duration-150 hover:border-secondary hover:bg-secondary hover:text-white hover:transition-all hover:duration-75"
           >
             Ver Catálogo
-          </button>
+          </a>
           <button
             type="button"
             className="border px-10 py-2 font-ebGaramond text-xl italic text-white duration-150 hover:border-yellow-600 hover:bg-yellow-600 hover:text-black hover:transition-all hover:duration-75"

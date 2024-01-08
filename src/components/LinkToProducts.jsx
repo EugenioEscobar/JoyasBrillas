@@ -10,7 +10,7 @@ export function LinkToProductos(categoria) {
     <div className="mt-5 flex justify-end px-32">
       <Link
         to="/joyas"
-        className="group relative flex items-center gap-1 text-xl italic text-corn-500 underline underline-offset-4 hover:opacity-80"
+        className="group relative flex items-center gap-1 text-xl italic text-corn-600 underline underline-offset-4 hover:opacity-80"
       >
         <span className="relative transition-all duration-300 group-hover:-translate-x-4 ">
           {`Ver ${nombreCategoria}`}
