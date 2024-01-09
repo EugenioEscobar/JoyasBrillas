@@ -14,7 +14,7 @@ export function Main() {
   console.log(categorias);
 
   return (
-    <div className="bg-cararra-100 scroll-smooth font-josefin">
+    <div className="scroll-smooth bg-cararra-100 font-josefin">
       <Advertisement span="Envianos tu reserva y obtén un 10% de descuento"></Advertisement>
 
       <Navbar></Navbar>
@@ -30,11 +30,11 @@ export function Main() {
             </span>
           </h2>
         </header>
-        <ProductList counter={4}></ProductList>
+        <ProductList counter={6}></ProductList>
         {categorias.map((categoria) => {
           return (
             <ProductList
-              counter={4}
+              counter={6}
               key={categoria}
               categoria={categoria}
             ></ProductList>

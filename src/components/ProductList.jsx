@@ -4,9 +4,11 @@ import { productos } from "../constants/products";
 import { LinkToProductos } from "./LinkToProducts";
 
 export function ProductList({ counter = 16, categoria, classname = "" }) {
-  // if (categoria)
-  let productListed = productos.filter((prod) => prod.tipo === categoria);
+  let productListed = categoria
+    ? productos.filter((prod) => prod.tipo === categoria)
+    : productos;
   productListed = productListed.slice(0, counter);
+
   return (
     <div>
       {categoria ? (
@@ -16,16 +18,13 @@ export function ProductList({ counter = 16, categoria, classname = "" }) {
       ) : null}
 
       <main className={`flex justify-center px-16 pt-4 md:px-32 ${classname}`}>
-        <div className="grid grid-cols-6 gap-2">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4  lg:grid-cols-6">
           {productListed.map((item) => {
             return (
-              <article
-                key={item.id}
-                className="sm:w-[46%] md:w-[30%] lg:w-[22%]"
-              >
+              <article key={item.id} className="bg-gray-50 p-1">
                 <Link
-                  to={`/joya/${item.id}`}
-                  className="relative w-full flex-grow rounded-sm pb-16"
+                  to={`/joya`}
+                  className="group relative w-full flex-grow rounded-sm pb-16"
                 >
                   <img
                     src={neckless}
@@ -33,14 +32,14 @@ export function ProductList({ counter = 16, categoria, classname = "" }) {
                     className="aspect-square w-full object-center"
                   />
                   <div className="absolute top-0 -z-10 aspect-square w-full bg-white opacity-30 group-hover:z-10"></div>
-                  <div className="flex flex-col text-left">
+                  <div className="flex flex-col p-2 text-left">
                     <span className="font-medium ">{item.nombre}</span>
                     <span className="font-light">{item.descripcion}</span>
-                    <span className="mt-4 flex justify-start gap-5">
-                      <p className="text-xl font-bold italic">{`$${item.total}`}</p>
+                    <span className="mt-4 flex justify-start gap-2">
                       <p className="text-xl italic text-primary line-through">{`$${
                         item.total * 2
                       }`}</p>
+                      <p className="text-xl font-bold italic">{`$${item.total}`}</p>
                     </span>
                   </div>
                 </Link>
