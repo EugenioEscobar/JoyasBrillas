@@ -11,7 +11,6 @@ import {
 
 export function Main() {
   const categorias = getTiposProducto();
-  console.log(categorias);
 
   return (
     <div className="scroll-smooth bg-cararra-100 font-josefin">

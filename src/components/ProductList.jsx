@@ -23,7 +23,7 @@ export function ProductList({ counter = 16, categoria, classname = "" }) {
             return (
               <article key={item.id} className="bg-gray-50 p-1">
                 <Link
-                  to={`/joya`}
+                  to={`/joya/${item.id}`}
                   className="group relative w-full flex-grow rounded-sm pb-16"
                 >
                   <img
