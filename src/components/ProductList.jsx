@@ -1,6 +1,6 @@
 import { neckless } from "../assets";
 import { Link } from "react-router-dom";
-import { productos } from "../constants/products";
+import productos from "../constants/products.json";
 import { LinkToProductos } from "./LinkToProducts";
 
 export function ProductList({ counter = 16, categoria, classname = "" }) {
@@ -27,7 +27,7 @@ export function ProductList({ counter = 16, categoria, classname = "" }) {
                   className="group relative w-full flex-grow rounded-sm pb-16"
                 >
                   <img
-                    src={neckless}
+                    src={item.imagen == "null" ? neckless : item.imagen}
                     alt={item.Nombre}
                     className="aspect-square w-full object-center"
                   />

@@ -14,7 +14,7 @@ export function Main() {
   console.log(categorias);
 
   return (
-    <div className="scroll-smooth bg-cararra-100 font-josefin">
+    <div className="scroll-smooth bg-cararra-50 font-josefin">
       <Advertisement span="Envianos tu reserva y obtén un 10% de descuento"></Advertisement>
 
       <Navbar></Navbar>

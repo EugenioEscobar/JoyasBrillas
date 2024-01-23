@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
+import { neckless } from "../assets";
 import { ProductList } from "../components";
 import { Navbar, Footer, Breadcrumb } from "../components";
-import { productos } from "../constants/products";
+import productos from "../constants/products.json";
 
 export function ProductView() {
   document.body.scrollTop = 0; // Para navegadores Safari
@@ -28,15 +29,15 @@ export function ProductView() {
             <div className="grid grid-cols-6">
               <section className="flex flex-col gap-4 px-2">
                 <img
-                  src="https://static.sammit.cl/2017/aro-circon-onix-6x6-mm-74914e-500.jpg"
-                  alt="Aro de plata mujer"
-                  onMouseOver={() =>
-                    handleImageHover(
-                      "https://static.sammit.cl/2017/aro-circon-onix-6x6-mm-74914e-500.jpg",
-                    )
+                  src={
+                    selectedProduct.imagen == "null"
+                      ? neckless
+                      : selectedProduct.imagen
                   }
+                  alt="Aro de plata mujer"
+                  onMouseOver={() => handleImageHover(selectedProduct.imagen)}
                 />
-                <img
+                {/* <img
                   src="https://static.sammit.cl/26355/aro-pareja-con-circones-389024-500.jpg"
                   alt="Aro de plata mujer"
                   onMouseOver={() =>
@@ -53,12 +54,16 @@ export function ProductView() {
                       "https://static.sammit.cl/40674/argolla-corazon-32-mm-963ac5-500.jpg",
                     )
                   }
-                />
+                /> */}
               </section>
               <div className="col-span-5 overflow-hidden px-2">
                 <img
                   id="productImage"
-                  src="https://static.sammit.cl/2017/aro-circon-onix-6x6-mm-74914e-500.jpg"
+                  src={
+                    selectedProduct.imagen == "null"
+                      ? neckless
+                      : selectedProduct.imagen
+                  }
                   alt="Aro de plata mujer"
                   className="hover:scale-125"
                 />
